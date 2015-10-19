@@ -16,10 +16,6 @@ function select(element) {
     return selection.toString();
 }
 
-select.prototype.clear = function() {
-    window.getSelection.removeAllRanges();
-};
-
 module.exports = select;
 
 },{}]},{},[1])(1)
