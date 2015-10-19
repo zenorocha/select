@@ -1,0 +1,13 @@
+{
+  "name": "select",
+  "version": "0.0.0",
+  "description": "Lightweight DOM selection",
+  "license": "MIT",
+  "main": "dist/select.js",
+  "keywords": [
+    "range",
+    "select",
+    "selecting",
+    "selection"
+  ]
+}
