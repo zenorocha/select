@@ -2,6 +2,7 @@
   "name": "select",
   "description": "Lightweight DOM selection",
   "version": "1.0.0",
+  "main": "src/select.js",
   "repository": "zenorocha/select",
   "keywords": [
     "range",
