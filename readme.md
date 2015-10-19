@@ -1,5 +1,7 @@
 # select
 
+[![Build Status](http://img.shields.io/travis/zenorocha/select/master.svg?style=flat)](https://travis-ci.org/zenorocha/select)
+
 Lightweight DOM selection.
 
 ## Install
