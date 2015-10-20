@@ -1,6 +1,6 @@
 {
   "name": "select",
-  "description": "Lightweight DOM selection",
+  "description": "Programmatically select the text of a HTML element",
   "version": "1.0.1",
   "main": "src/select.js",
   "repository": "zenorocha/select",

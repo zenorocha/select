@@ -1,7 +1,7 @@
 {
   "name": "select",
   "version": "1.0.1",
-  "description": "Lightweight DOM selection",
+  "description": "Programmatically select the text of a HTML element",
   "license": "MIT",
   "main": "dist/select.js",
   "keywords": [
