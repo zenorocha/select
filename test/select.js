@@ -45,7 +45,7 @@ describe('select non-editable element with no children', function() {
     });
 });
 
-describe('select non-editable element with children nodes', function() {
+describe('select non-editable element with child node', function() {
     before(function() {
         global.li = document.createElement('li');
         global.li.textContent = 'lorem ipsum';
@@ -63,5 +63,31 @@ describe('select non-editable element with children nodes', function() {
     it('should return the selected text', function() {
         var result = select(global.ul);
         assert.equal(result, global.ul.textContent);
+    });
+});
+
+describe('select non-editable svg element w/ multiple text children', function() {
+    before(function() {
+        global.text1 = document.createElement('text');
+        global.text1.textContent = 'lorem ipsum';
+
+        global.text2 = document.createElement('text');
+        global.text2.textContent = 'dolor zet';
+
+        global.svg = document.createElement('svg');
+        global.svg.appendChild(global.text1);
+        global.svg.appendChild(global.text2);
+
+        document.body.appendChild(global.svg);
+    });
+
+    after(function() {
+        document.body.innerHTML = '';
+    });
+
+    it('should return the selected text', function() {
+        var result = select(global.svg);
+        assert.equal(result, global.text1.textContent +
+                             global.text2.textContent);
     });
 });
