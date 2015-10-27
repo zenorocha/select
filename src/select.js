@@ -1,19 +1,24 @@
 function select(element) {
-    var selection = window.getSelection();
+    var selectedText;
 
     if (element.nodeName === 'INPUT' || element.nodeName === 'TEXTAREA') {
         element.selectionStart = 0;
         element.selectionEnd = element.value.length;
+
+        selectedText = element.value;
     }
     else {
+        var selection = window.getSelection();
         var range = document.createRange();
 
         range.selectNodeContents(element);
         selection.removeAllRanges();
         selection.addRange(range);
+
+        selectedText = selection.toString();
     }
 
-    return selection.toString();
+    return selectedText;
 }
 
 module.exports = select;
