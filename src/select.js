@@ -2,8 +2,7 @@ function select(element) {
     var selectedText;
 
     if (element.nodeName === 'INPUT' || element.nodeName === 'TEXTAREA') {
-        element.selectionStart = 0;
-        element.selectionEnd = element.value.length;
+        element.select();
 
         selectedText = element.value;
     }
