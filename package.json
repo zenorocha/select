@@ -2,7 +2,7 @@
   "name": "select",
   "description": "Programmatically select the text of a HTML element",
   "version": "1.0.4",
-  "main": "src/select.js",
+  "main": "dist/select.js",
   "repository": "zenorocha/select",
   "keywords": [
     "range",
