@@ -13,6 +13,7 @@ function select(element) {
         range.selectNodeContents(element);
         selection.removeAllRanges();
         selection.addRange(range);
+        element.focus();
 
         selectedText = selection.toString();
     }
