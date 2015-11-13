@@ -3,11 +3,16 @@ function select(element) {
     var selectedText;
 
     if (element.nodeName === 'INPUT' || element.nodeName === 'TEXTAREA') {
+        element.focus();
         element.setSelectionRange(0, element.value.length);
 
         selectedText = element.value;
     }
     else {
+        if (element.hasAttribute('contenteditable')) {
+            element.focus();
+        }
+
         var selection = window.getSelection();
         var range = document.createRange();
 
@@ -17,8 +22,6 @@ function select(element) {
 
         selectedText = selection.toString();
     }
-
-    element.focus();
 
     return selectedText;
 }
