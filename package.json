@@ -24,5 +24,6 @@
   "scripts": {
     "build": "browserify src/select.js -s select -o dist/select.js",
     "test": "karma start --single-run"
-  }
+  },
+  "license": "MIT"
 }
