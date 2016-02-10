@@ -2,6 +2,7 @@
   "name": "select",
   "description": "Programmatically select the text of a HTML element",
   "version": "1.0.6",
+  "license": "MIT",
   "main": "src/select.js",
   "repository": "zenorocha/select",
   "keywords": [
@@ -24,6 +25,5 @@
   "scripts": {
     "build": "browserify src/select.js -s select -o dist/select.js",
     "test": "karma start --single-run"
-  },
-  "license": "MIT"
+  }
 }
