@@ -7,7 +7,7 @@ function select(element) {
         selectedText = element.value;
     }
     else if (element.nodeName === 'INPUT' || element.nodeName === 'TEXTAREA') {
-        element.focus();
+        element.select();
         element.setSelectionRange(0, element.value.length);
 
         selectedText = element.value;
