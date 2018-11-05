@@ -5,12 +5,12 @@ module.exports = function(karma) {
         frameworks: ['browserify', 'chai', 'mocha'],
 
         files: [
-            'src/**/*.js',
+            'cjs/**/*.js',
             'test/**/*.js'
         ],
 
         preprocessors: {
-            'src/**/*.js' : ['browserify'],
+            'cjs/**/*.js' : ['browserify'],
             'test/**/*.js': ['browserify']
         },
 

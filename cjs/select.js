@@ -1,3 +1,5 @@
+'use strict';
+
 function select(element) {
     var selectedText;
 
@@ -40,4 +42,4 @@ function select(element) {
     return selectedText;
 }
 
-export default select;
+module.exports = select;

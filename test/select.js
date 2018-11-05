@@ -1,4 +1,4 @@
-var select = require('../src/select');
+var select = require('../cjs/select');
 
 describe('select editable elements', function() {
     before(function() {
